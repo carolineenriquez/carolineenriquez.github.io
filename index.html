@@ -7,7 +7,9 @@
 	
 <style type="text/css">
 	
-body{font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;text-align:center;margin:0;padding:0;line-height:1.5em;}
+body{
+	backgroundimage:url("https://www.pets4homes.co.uk/images/breeds/55/large/2525bdb43f08d9b6861b1d089f96fef2.jpg");
+	font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;text-align:center;margin:0;padding:0;line-height:1.5em;}
 header, section, article{display:block;}
 header{text-align:center;position:relative;z-index:1;}
 section{margin:20px 0 10px;padding:0;}
@@ -40,83 +42,12 @@ ol > li{list-style-position:inside;list-style-type:decimal;margin-bottom:10px;ma
 body{font-size:18px;}
 #resumecontainer{padding:20px;margin:20px;max-width:1000px;}	
 #body_popup{max-width:1000px;}
-	img {
-    border-radius: 50%;
-}
+	
 	
 
 	</style>
 	
-<script type="text/javascript">
-(function(){
-  function loadScript(url, callback){  //lifted from Nick Zakas
-    var script = document.createElement("script")
-    script.type = "text/javascript";
-    if (script.readyState){  //IE
-      script.onreadystatechange = function(){
-        if (script.readyState == "loaded" ||
-          script.readyState == "complete"){
-          script.onreadystatechange = null;
-          callback();
-        }
-      };
-    }else{  //Others
-      script.onload = function(){
-        callback();
-      };
-    }
-    script.src = url;
-    document.body.appendChild(script);
-  }
- 
-  function afterLoad() {
-	loadScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", afterJQLoad);
-	loadScript("http://www.google-analytics.com/ga.js", googleCrap);
-  }
-  
-  function afterJQLoad(){
-    var details = '',
-      coords = {left:'0px', top:'0px'},
-      close = function(){
-        details = '';
-        $("#body_popup > div.temp").remove();
-	    $("#body_popup").css({left:'0px', top:'0px'}).hide();
-      };
-    $(".details, .notice").click(function(e){  
-      var $target = $(this),
-	    coords = {left:'10px', top:e.pageY + 'px'};
-	  if(details !== ''){ 
-	    close();
-	  }
-	  details = $(this.rel).html();
-	  var id = ($target.hasClass("details")) ? "#skills_popup" : "#notice_popup";
-	  $("#body_popup").append(details).css(coords).show();
-    });
-    $(".close").click(function(){
-	  close();
-    });
-    $(".external").on('click', function(){
-      var url = this.rel;
-      window.open(url);
-      return;
-    }); 
-  }
-  function googleCrap(){
-    try {
-      var pageTracker = _gat._getTracker("UA-8130141-1");
-      pageTracker._trackPageview();
-    }catch(err){}  
-  }
-  
-  if (window.addEventListener){
-    window.addEventListener("load", afterLoad, false);
-  }else if (window.attachEvent){
-    window.attachEvent("onload", afterLoad);
-  } else {
-    window.onload = afterLoad;
-  }
-})();
-</script>
+
 
 </head>
 
@@ -133,8 +64,7 @@ body{font-size:18px;}
 
 <header>
 <h1>Caroline Enriquez</h1>
-	<img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/28795819_1835939963096938_1275583966694342656_n.jpg?oh=f15e138233f3600ec2fd7effd227c923&oe=5B4A4E52" 
-style="width:20%;"  alt="Avatar">
+	
 
 
 
